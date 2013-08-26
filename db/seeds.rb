@@ -1,4 +1,3 @@
-
 def make_survey_creators(num)
   num.times do
     user = make_user
