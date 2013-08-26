@@ -1,0 +1,10 @@
+= form_for @user do |f|
+ .right.field= f.label :name
+ .left.field= f.text_field :name
+ .left.field= f.label :email
+ .right.field= f.text_field :email
+ .left.field= f.label :password
+ .right.field= f.password_field :password
+ .left.field= f.label :password_confirmation
+ .right.field= f.password_field :password_confirmation
+ .left.field= f.submit
