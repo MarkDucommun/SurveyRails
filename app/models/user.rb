@@ -6,4 +6,6 @@ class User < ActiveRecord::Base
   has_many :answers
 
   has_secure_password
+
+  attr_accessible :name, :email
 end
