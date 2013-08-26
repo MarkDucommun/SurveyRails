@@ -1,3 +1,4 @@
 class PossibleAnswer < ActiveRecord::Base
-  attr_accessible 
+  belongs_to :question
+  has_many :users, through: :question
 end
