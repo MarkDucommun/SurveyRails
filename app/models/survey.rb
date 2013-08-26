@@ -4,5 +4,5 @@ class Survey < ActiveRecord::Base
   has_many :users, through: :user_surveys
   belongs_to :creator, class_name: "User"
 
-  attr_accessible :title
+  attr_accessible :title, :questions, :creator
 end
