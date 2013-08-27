@@ -1,8 +1,7 @@
 SurveyRails::Application.routes.draw do
   
   resources :users
-  resources :session, :only => [ :new, :create, :destroy ]
-
+  resources :session
   # resources :surveys do
   #   collection do
   #     get 'index'
