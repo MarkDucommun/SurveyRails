@@ -1,5 +1,8 @@
 %h2= @survey.title
 
-= form_for @survey.questions do |question|
+= @survey.questions.each do |question|
   %h4= question.question_text
-  %if 
+  = form_for question, url: answer_questions_url do |f|
+    = if question.possible_answers.nil?
+      .field= f.label :text
+      .field= f.text_field :text

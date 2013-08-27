@@ -9,6 +9,12 @@ SurveyRails::Application.routes.draw do
       get 'results'
     end
   end
+
+  resources :questions do
+    collection do
+      post 'answer'
+    end
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
   
