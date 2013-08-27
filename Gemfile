@@ -28,6 +28,9 @@ gem 'faker'
 
 gem 'haml-rails'
 
+gem 'better_errors'
+gem 'binding_of_caller'
+
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 

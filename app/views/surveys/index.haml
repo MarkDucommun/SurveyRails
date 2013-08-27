@@ -2,4 +2,4 @@
 
 = content_tag_for(:li, @surveys) do |survey|
   %b= survey.title
-  =link_to "Take Survey", surveys_url(survey)
+  =link_to "Take Survey", survey_url(survey)

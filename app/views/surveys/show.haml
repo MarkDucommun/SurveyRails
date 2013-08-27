@@ -3,6 +3,6 @@
 = @survey.questions.each do |question|
   %h4= question.question_text
   = form_for question, url: answer_questions_url do |f|
-    = if question.possible_answers.nil?
-      .field= f.label :text
-      .field= f.text_field :text
+    = f.label :text
+    = f.text_field :text
+
