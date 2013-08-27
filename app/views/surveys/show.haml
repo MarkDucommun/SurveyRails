@@ -1,0 +1,5 @@
+%h2= @survey.title
+
+= form_for @survey.questions do |question|
+  %h4= question.question_text
+  %if 

@@ -1,0 +1,5 @@
+%h2 Here's our surveys, y'all!
+
+= content_tag_for(:li, @surveys) do |survey|
+  %b= survey.title
+  =link_to "Take Survey", survey_path(survey)

@@ -2,11 +2,13 @@ SurveyRails::Application.routes.draw do
   
   resources :users
   resources :session
-  # resources :surveys do
-  #   collection do
-  #     get 'index'
-  #     get 'show'
-  #     post ''
+  resources :surveys do
+    collection do
+      get 'show'
+      post 'take'
+      get 'results'
+    end
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
   
