@@ -1,0 +1,8 @@
+%h2= @survey.title
+
+= @survey.questions.each do |question|
+  %h4= question.question_text
+  = form_for question, url: answer_questions_url do |f|
+    = f.label :text
+    = f.text_field :text
+
